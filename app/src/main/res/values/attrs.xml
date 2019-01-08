@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Theme">
+        <attr name="customImageViewStyle" format="reference" />
+    </declare-styleable>
+    <!-- 自定义圆角ImageView -->
+    <declare-styleable name="CustomImageView">
+        <attr name="circle" format="boolean" />
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_color" format="color"/>
+        <attr name="border_width" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RectProgress">
+        <attr name="progressValue" format="integer" />
+        <attr name="progressMax" format="integer" />
+        <attr name="bgColor" format="color" />
+        <attr name="rectRadius" format="dimension" />
+        <attr name="iconPadding" format="dimension" />
+        <attr name="progressColor" format="color" />
+        <attr name="iconSrc" format="reference" />
+        <attr name="progressOrientation">
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

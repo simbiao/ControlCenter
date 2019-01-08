@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.vsun.controlcenter.views.FloatLayout xmlns:lynn="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:src="@mipmap/control_arrows"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/data_relate"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@mipmap/background4x4">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+
+
+                <com.vsun.controlcenter.views.FlightModeActionView
+                    android:id="@+id/flightmode"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/flight_mode_close" />
+
+                <com.vsun.controlcenter.views.WifiActionView
+                    android:id="@+id/wifi"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/flightmode"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wifi_open" />
+
+                <com.vsun.controlcenter.views.DataActionView
+                    android:id="@+id/data"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_below="@id/flightmode"
+                    android:layout_marginTop="2dp"
+                    android:padding="5dp"
+                    android:src="@drawable/data_open" />
+
+                <com.vsun.controlcenter.views.BluetoothActionView
+                    android:id="@+id/bluetooth"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_below="@+id/wifi"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/data"
+                    android:padding="5dp"
+                    android:src="@drawable/bluetooth_open" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/music"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@mipmap/background4x4">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp"
+                    android:paddingTop="5dp"
+                    >
+                    <TextView
+                        android:id="@+id/title"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:text="Music"
+                        android:textSize="20dp"
+                    />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/privious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/control_music_privious_normal"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginBottom="30dp"
+                        />
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/control_music_play_normal"
+                        android:layout_toRightOf="@id/privious"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginBottom="30dp"
+                        />
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/control_music_next_normal"
+                        android:layout_toRightOf="@id/play"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginBottom="30dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="144dp"
+                android:layout_height="66dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:background="@mipmap/background1x1_white"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp">
+                    <com.vsun.controlcenter.views.RotateLockActionView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:id="@+id/lock"
+                        android:src="@mipmap/control_lock_screen_open"
+                        android:layout_centerInParent="true"
+                    />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@mipmap/background1x1_white"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp">
+                    <com.vsun.controlcenter.views.DisturbActionView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:id="@+id/disturb"
+                        android:src="@mipmap/control_not_disturb_open"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.vsun.controlcenter.views.ScreenTimeout
+                android:id="@+id/timeout"
+                android:layout_width="144dp"
+                android:layout_height="66dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="6dp"
+                android:orientation="horizontal"
+                android:background="@mipmap/background1x2">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/control_timeout_normal"
+                    />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Screen\nTimeout"
+                    />
+            </com.vsun.controlcenter.views.ScreenTimeout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <com.vsun.controlcenter.customui.RectProgress
+                android:id="@+id/light_progressbar"
+                android:layout_width="66dp"
+                android:layout_height="144dp"
+                android:layout_marginLeft="6dp"
+                app:progressOrientation="vertical"
+                app:progressMax="100"
+                app:iconSrc="@mipmap/control_brightness2_normal"
+                app:progressValue="30"
+                app:iconPadding="10dp"
+                />
+
+            <!--android.support.v7.widget.AppCompatImageView
+                android:layout_width="66dp"
+                android:layout_height="144dp"
+                android:background="@mipmap/background2x1"
+                android:layout_marginLeft="12dp"
+                /-->
+            <com.vsun.controlcenter.customui.RectProgress
+                android:id="@+id/volum_progressbar"
+                android:layout_width="66dp"
+                android:layout_height="144dp"
+                android:layout_marginLeft="12dp"
+                app:progressOrientation="vertical"
+                app:progressMax="100"
+                app:iconSrc="@mipmap/control_sound_volume2_normal"
+                app:progressValue="30"
+                app:iconPadding="10dp"
+                />
+            <!--android.support.v7.widget.AppCompatImageView
+                android:layout_width="66dp"
+                android:layout_height="144dp"
+                android:background="@mipmap/background2x1"
+                android:layout_marginLeft="12dp"
+                /-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            >
+
+            <com.vsun.controlcenter.views.BottomButtonActionView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/first_first"
+                android:background="@mipmap/background1x1"
+                android:layout_width="66dp"
+                android:layout_height="66dp">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    />
+            </com.vsun.controlcenter.views.BottomButtonActionView>
+
+            <com.vsun.controlcenter.views.BottomButtonActionView
+                android:id="@+id/first_second"
+                android:background="@mipmap/background1x1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="66dp"
+                android:layout_height="66dp">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    />
+            </com.vsun.controlcenter.views.BottomButtonActionView>
+
+            <com.vsun.controlcenter.views.BottomButtonActionView
+                android:id="@+id/first_third"
+                android:background="@mipmap/background1x1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="66dp"
+                android:layout_height="66dp">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    />
+            </com.vsun.controlcenter.views.BottomButtonActionView>
+
+            <com.vsun.controlcenter.views.BottomButtonActionView
+                android:id="@+id/first_fourth"
+                android:background="@mipmap/background1x1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="66dp"
+                android:layout_height="66dp">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    />
+            </com.vsun.controlcenter.views.BottomButtonActionView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            >
+
+            <com.vsun.controlcenter.views.BottomButtonActionView
+                android:id="@+id/second_first"
+                android:background="@mipmap/background1x1"
+                android:layout_marginLeft="30dp"
+                android:layout_width="66dp"
+                android:layout_height="66dp">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    />
+            </com.vsun.controlcenter.views.BottomButtonActionView>
+
+            <com.vsun.controlcenter.views.BottomButtonActionView
+                android:id="@+id/second_second"
+                android:background="@mipmap/background1x1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="66dp"
+                android:layout_height="66dp">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    />
+            </com.vsun.controlcenter.views.BottomButtonActionView>
+
+            <com.vsun.controlcenter.views.BottomButtonActionView
+                android:id="@+id/second_thrid"
+                android:background="@mipmap/background1x1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="66dp"
+                android:layout_height="66dp">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    />
+            </com.vsun.controlcenter.views.BottomButtonActionView>
+
+            <com.vsun.controlcenter.views.BottomButtonActionView
+                android:id="@+id/second_fourth"
+                android:background="@mipmap/background1x1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="66dp"
+                android:layout_height="66dp">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    />
+            </com.vsun.controlcenter.views.BottomButtonActionView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.vsun.controlcenter.views.FloatLayout>

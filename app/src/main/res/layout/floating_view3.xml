@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vsun.controlcenter.views.PopupView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:gravity="center|center_horizontal|center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:background="@mipmap/background4x4"
+        android:orientation="vertical"
+        android:layout_width="288dp"
+        android:layout_height="288dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="144dp">
+
+            <TextView
+                android:id="@+id/first"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:text="15S"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:id="@+id/second"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:text="30S"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+            <TextView
+
+                android:id="@+id/third"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:text="1M"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="144dp">
+
+            <TextView
+                android:id="@+id/fourth"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:text="2M"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:id="@+id/fifth"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:text="10M"
+
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+            <TextView
+                android:id="@+id/sixth"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:text="30M"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.vsun.controlcenter.views.PopupView>
